@@ -47,7 +47,7 @@
 /* Logo */
 
 .logo img {
-  width: 200px;
+  width: 250px;
   height: auto;
   display: block;
 }
@@ -2031,36 +2031,88 @@ img.bottom_corner_img {
   }
 }
 
-.contact-content a{
+.contact-content a {
   text-decoration: none;
   color: var(--secondary-color);
   transition: all ease-in-out 0.45s;
 }
 
-.contact-content a:hover{
+.contact-content a:hover {
   color: var(--primary-color);
-    transition: all ease-in-out 0.45s;
+  transition: all ease-in-out 0.45s;
 
 }
 
+.portfolio_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
 
+.portfolio_banner_image {
+  padding: 20px;
+}
 
+.portfolio_banner_image img {
+  width: 100%;
+  border-radius: 30px;
 
+}
 
+.portfolio_grid .services_tag {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
 
+.portfolio_grid .services_title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1;
+}
 
+.portfolio_grid .services_description {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 505px;
+}
 
+.portfolio_grid .services_list li {
+  list-style: none;
+}
 
+.services_list li {
+  display: flex;
+  gap: 10px;
+}
 
+span.services_icon {
+  color: var(--primary-color);
+  font-weight: 800;
+}
 
+.about_my_skills {
+  font-size: 14px;
+}
 
+.services_hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.powered-youe-success {
+  color: var(--primary-color);
+}
 
-
-
-
-
-
+.portfolio_banner_section {
+  background-color: #fcf2ee;
+}
 
 
 
