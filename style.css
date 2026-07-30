@@ -1380,24 +1380,18 @@ button i {
 
 /* Button */
 
-.cta-btn {
+/* .cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
   background: linear-gradient(90deg, var(--primary-color), var(--primary-color));
-
   color: #fff;
   text-decoration: none;
-
   padding: 15px 28px;
-
   border-radius: 10px;
-
   font-weight: 600;
-
   transition: 0.35s;
-}
+} */
 
 .cta-btn:hover {
   transform: translateY(-4px);
@@ -1778,13 +1772,13 @@ img.bottom_corner_img {
 
 .about-journey-section .about-journey-badge {
   position: absolute;
-  right: 35px;
+  right: -30px;
   bottom: 90px;
 
   width: 120px;
   height: 120px;
 
-  background: #fff;
+  /* background: #fff; */
 
   border-radius: 50%;
 
@@ -1792,8 +1786,9 @@ img.bottom_corner_img {
   justify-content: center;
   align-items: center;
 
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .12);
-
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, .12); */
+padding-left: 14px;
+    transform: rotate(-18deg);
   z-index: 5;
 }
 
@@ -2113,6 +2108,187 @@ span.services_icon {
 .portfolio_banner_section {
   background-color: #fcf2ee;
 }
+
+section.working-process .section-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.section_title_header span {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+h2.working-process-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.working_word {
+  color: var(--primary-color);
+}
+
+.section-title-container p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  max-width: 565px;
+  margin-top: -10px;
+}
+
+.process-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px 0;
+
+}
+
+div.working-process .process-cta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border: 1px solid var(--primary-color);
+  background: antiquewhite;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: -130px;
+  margin-bottom: 50px;
+
+}
+
+div.working-process .cta-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.process-cta h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.process-wrapper .process-card {
+  padding: 25px;
+  text-align: center;
+
+}
+
+.process-card .icon {
+  margin: 0 auto;
+}
+
+.process-card h3 {
+  margin: 20px 0 7px;
+}
+
+.process-card .icon {
+  background-color: var(--primary-color);
+  font-size: 25px;
+  color: #fff;
+}
+
+.working-process {
+  text-align: center;
+}
+
+.section-title-container p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service_banner_bottom {
+  margin-bottom: 70px;
+}
+
+.process-wrapper .process-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .35s;
+}
+
+.process-wrapper .process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(255, 107, 0, .18);
+  border-color: var(--primary-color);
+}
+
+.skills-title-container {
+  text-align: center;
+}
+
+.skills-grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card-head-skills-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-head-skills-logo .skill-icon-card {
+  background: var(--primary-color);
+  color: oldlace;
+  padding: 7px;
+  font-size: 27px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-journey-badge img {
+  width: 100%;
+}
+
+
+
+.about-journey-circle {
+  animation: animName 8s linear infinite ;
+  width: 50px;
+  height: 50px;
+  /* background: #0091EA; */
+  margin: 20px;
+  /* border-top: 2px solid var(--primary-color) !important;
+  border-bottom: 2px solid red !important;
+  border-left: 2px solid gold !important;
+  border-right: 2px solid rebeccapurple !important; */
+  opacity: 1;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
