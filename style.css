@@ -318,7 +318,7 @@
 }
 
 .slider-container {
-  background-color: #fae9d7;
+  background-color: #fef4eb;
   height: 700px;
   display: flex;
   position: relative;
@@ -335,6 +335,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+}
+
+.slider-container {
+  background-image: url(assets/images/index-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-image {
@@ -373,9 +379,9 @@
 
 .banner_main_container img {
   position: absolute;
-  top: 0;
+  top: 85px;
   right: 0;
-  height: 100%;
+  height: 83%;
   z-index: -1;
 }
 
@@ -1787,8 +1793,8 @@ img.bottom_corner_img {
   align-items: center;
 
   /* box-shadow: 0 20px 50px rgba(0, 0, 0, .12); */
-padding-left: 14px;
-    transform: rotate(-18deg);
+  padding-left: 14px;
+  transform: rotate(-18deg);
   z-index: 5;
 }
 
@@ -2257,7 +2263,7 @@ div.working-process .cta-left {
 
 
 .about-journey-circle {
-  animation: animName 8s linear infinite ;
+  animation: animName 8s linear infinite;
   width: 50px;
   height: 50px;
   /* background: #0091EA; */
@@ -2279,13 +2285,75 @@ div.working-process .cta-left {
   }
 }
 
+.single_page_services {
+  background-image: url(assets/images/banner-service.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 448px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: rgba(15, 27, 40, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.breadcrumb-item.home i {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.breadcrumb-arrow {
+  color: #7d8994;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.breadcrumb-item.active {
+  color: var(--primary-color)
+}
+
+/* Hover */
+.breadcrumb-item:not(.active):hover {
+  color: var(--primary-color);
+}
+
+.single_page_heading p {
+
+  font-size: 20px;
+  line-height: 1.1;
+  color: #555;
+  max-width: 552px;
+  margin: 10px 0 25px;
+}
 
 
-
-
-
-
-
+.single_page_heading h2 {
+  font-size: 55px;
+}
+.services_main_container{
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30PX;
+}
 
 
 
