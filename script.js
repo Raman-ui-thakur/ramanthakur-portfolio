@@ -44,4 +44,28 @@ var typed2 = new Typed('#Web_developer', {
     loop: true
 });
 
+// hire me popup js code
+const hireModal = document.getElementById("hireModal");
+const hireOpen = document.getElementById("hireOpen");
+const hireClose = document.getElementById("hireClose");
+const hireOverlay = document.querySelector(".hire-modal-overlay");
 
+hireOpen.addEventListener("click", function (e) {
+    e.preventDefault();
+    hireModal.classList.add("active");
+    document.body.style.overflow = "hidden";
+});
+
+function closeHireModal() {
+    hireModal.classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+hireClose.addEventListener("click", closeHireModal);
+hireOverlay.addEventListener("click", closeHireModal);
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closeHireModal();
+    }
+});
