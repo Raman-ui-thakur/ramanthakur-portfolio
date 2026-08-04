@@ -79,7 +79,7 @@
 /* Button */
 
 .contact-btn button,
-.primary_btn {
+.primary_btn,.portfolio_btn button, .portfolio_btn a {
   padding: 8px 16px;
   border: none;
   outline: none;
@@ -93,6 +93,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .contact-btn button:hover,
@@ -463,12 +464,12 @@
   gap: 20px;
 }
 
-.portfolio_btn button {
+.portfolio_btn button, .portfolio_btn a {
   background: var(--secondary-color);
   box-shadow: 6px 6px 0 -1px var(--primary-color);
 }
 
-.portfolio_btn button:hover {
+.portfolio_btn button:hover, .portfolio_btn a:hover {
   background: var(--primary-color);
   box-shadow: 6px 6px 0 -1px var(--secondary-color);
 }
@@ -817,6 +818,7 @@
 .card-image {
   overflow: hidden;
   border-radius: 20px;
+      border: 1px solid #ffa5a5;
 }
 
 .card-image img {
@@ -824,6 +826,7 @@
   display: block;
   transition: 0.4s;
   border-radius: 20px;
+      /* border: 1px solid #000; */
 }
 
 .portfolio-card:hover img {
@@ -916,14 +919,15 @@
 
 .category {
   position: absolute;
-  top: 232px;
+  top: 222px;
   left: 20px;
-  background: #ffffff57;
+  background: #00000057;
   border-radius: 30px;
   padding: 6px 11px;
   backdrop-filter: blur(3px);
   color: #fff;
   font-size: 12px;
+  
 }
 
 .contact_container {
@@ -2892,7 +2896,7 @@ ul.services_list .about_my_skills {
   border: 0;
   outline: 0;
 
-  padding: 10px 12px 10px 0;
+
 
   background: transparent;
 
@@ -3060,6 +3064,35 @@ ul.services_list .about_my_skills {
 
   transform: translateY(-3px);
 }
+
+.hire-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================
