@@ -161,3 +161,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+const currentPage =
+  window.location.pathname === "/" ||
+  window.location.pathname.endsWith("/")
+    ? "index.html"
+    : window.location.pathname.split("/").pop();
+
+document.querySelectorAll("nav a").forEach((link) => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
+});

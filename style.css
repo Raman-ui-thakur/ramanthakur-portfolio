@@ -1955,6 +1955,8 @@ img.bottom_corner_img {
 
   .about-journey-section .about-journey-image {
     width: 100%;
+            display: flex;
+        justify-content: center;
   }
 
   .about-journey-section .about-journey-bg-box,
@@ -2214,7 +2216,10 @@ div.working-process .cta-left {
 .about-journey-badge img {
   width: 100%;
 }
-
+.redirect_link {
+    display: flex;
+    justify-content: center;
+}
 .about-journey-circle {
   animation: animName 8s linear infinite;
   width: 50px;
@@ -2239,10 +2244,10 @@ div.working-process .cta-left {
 }
 
 .single_page_services {
-  background-image: url(assets/images/banner-image.png);
+  background-image: url(assets/images/pages-banner.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 557px;
+  height: 350px;
   display: flex;
   align-items: center;
 }
@@ -2290,15 +2295,20 @@ div.working-process .cta-left {
 }
 
 .single_page_heading p {
-  font-size: 20px;
-  line-height: 1.1;
-  color: #555;
-  max-width: 552px;
-  margin: 10px 0 25px;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #131212;
+    margin: 10px 0 25px;
+    text-align: center;
+    max-width: 697px;
+    width: 100%;
+    margin: 0 auto;
+        padding: 10px 0;
 }
 
 .single_page_heading h2 {
   font-size: 55px;
+  text-align: center;
 }
 
 .services_main_container {
@@ -3126,7 +3136,7 @@ ul.services_list .about_my_skills {
 
 .header-container .logo img {
   display: block;
-  width: 150px;
+  width: 285x;
   height: auto;
 }
 
@@ -3163,13 +3173,15 @@ ul.services_list .about_my_skills {
   text-decoration: none;
 
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
 
   transition: color 0.3s ease;
 }
-
+.header-container .nav-list ul li a.active {
+    color: var(--primary-color);
+}
 .header-container .nav-list ul li a:hover {
-  color: #d9a256;
+  color: var(--primary-color) !important;
 }
 
 
@@ -3202,8 +3214,8 @@ ul.services_list .about_my_skills {
 }
 
 .header-container .primary_btn:hover {
-  background: #d9a256;
-  color: #12211a;
+  background: var(--secondary-color);
+  color: #fff;
 }
 
 
@@ -3379,8 +3391,14 @@ ul.services_list .about_my_skills {
   }
 }
 
-
-
+span#Web_developer {
+    color: var(--primary-color);
+}
+.my_skills_section{
+background-image: url(assets/images/skills_bg.png);
+background-repeat: no-repeat  ;
+background-size: cover;
+}
 
 
 
@@ -3542,6 +3560,9 @@ ul.services_list .about_my_skills {
     grid-template-columns: 1fr 1fr;
 
   }
+.section-title-container .process-cta {
+    display: none !important;
+}
 }
 
 /* Mobile */
@@ -3838,13 +3859,15 @@ ul.services_list .about_my_skills {
   }
 
   .banner-headings h1 {
-    font-size: 35px;
+    font-size: 26px;
   }
 
   .banner-headings p {
-    font-size: 15px;
+    font-size: 13px;
   }
-
+.banner-headings h6 {
+    font-size: 15px;
+}
   .custom-container.banner_main_container {
     padding: 0;
   }
