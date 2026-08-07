@@ -3540,7 +3540,7 @@ ul.services_list .about_my_skills {
 
 span#Web_developer {
   color: var(--primary-color);
-  font-size: 27px;
+  font-size: 65px;
 }
 
 .my_skills_section {
@@ -3967,6 +3967,9 @@ span#Web_developer {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+  span#Web_developer {
+    font-size: 27px;
+}
 }
 
 /* Responsive */
